@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariana Arnold's information technology portfolio featuring the Datacenter Deployment Tracking System capstone project.">
+  <title>Mariana Arnold | Information Technology Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Mariana Arnold home">MA</a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <ul id="site-nav" class="site-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Master of Science in Information Technology</p>
+          <h1>I build practical systems that connect technical design with operational needs.</h1>
+          <p class="hero-copy">I am Mariana Arnold, an information technology graduate student focused on software engineering, datacenter operations, secure web applications, usability, and disciplined project delivery.</p>
+          <div class="button-row">
+            <a class="button primary" href="projects/ddts.html">View DDTS Capstone</a>
+            <a class="button secondary" href="https://github.com/MarianaArn" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Portfolio highlights">
+          <p class="metric"><strong>29/29</strong><span>automated capstone tests passed</span></p>
+          <p class="metric"><strong>2.6 ms</strong><span>measured median local HTTP latency</span></p>
+          <p class="metric"><strong>6 stages</strong><span>controlled datacenter rack workflow</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="eyebrow">About</p>
+        <h2>Technology with a clear operational purpose</h2>
+        <p>My work is shaped by the idea that a successful IT solution should be understandable, testable, maintainable, and useful to the people who depend on it. My graduate studies have allowed me to connect software engineering, databases, cybersecurity, human-computer interaction, project management, and systems operations in one applied body of work.</p>
+        <p>My capstone, the Datacenter Deployment Tracking System (DDTS), grew from a real operational problem: rack deployment status was fragmented across spreadsheets, email, tickets, and manually prepared reports. I designed and implemented a focused web application that centralizes deployment records, enforces workflow sequencing, preserves audit history, and provides role-aware views for operational users.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>Tools and competencies demonstrated through applied projects</h2>
+        <div class="card-grid skills-grid">
+          <article class="card"><h3>Application Development</h3><p>Python, Flask, Jinja2, Bootstrap, application factories, Blueprints, reusable services, form validation.</p></article>
+          <article class="card"><h3>Data & Persistence</h3><p>SQLAlchemy ORM, SQLite, relational modeling, Alembic migrations, audit-history design.</p></article>
+          <article class="card"><h3>Security</h3><p>Authentication, password hashing, CSRF protection, server-side role-based authorization, least-privilege thinking.</p></article>
+          <article class="card"><h3>Testing & Quality</h3><p>PyTest, integration and system testing, acceptance scenarios, regression testing, performance baselines.</p></article>
+          <article class="card"><h3>Deployment & Operations</h3><p>Linux, Gunicorn, Nginx, systemd, service verification, logs, environment and dependency management.</p></article>
+          <article class="card"><h3>Engineering Practice</h3><p>Git, GitHub, feature branches, focused commits, requirements, HCI analysis, documentation, scope management.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">Featured Project</p>
+        <h2>Datacenter Deployment Tracking System</h2>
+        <div class="project-feature">
+          <div>
+            <p>DDTS is a role-aware Flask web application designed to replace fragmented datacenter rack deployment tracking with one auditable workflow. The system manages deployments and racks, assigns technicians, protects role-specific actions, and enforces progression through Received, Racked, Powered, Data Cabled, Network Configured, and Validated.</p>
+            <p>The capstone demonstrates requirements analysis, architecture, database design, security controls, HCI decisions, automated testing, Linux deployment, configuration management, and professional technical documentation.</p>
+            <div class="tag-row" aria-label="DDTS technologies">
+              <span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>Bootstrap</span><span>PyTest</span><span>Nginx</span><span>systemd</span><span>GitHub</span>
+            </div>
+            <div class="button-row">
+              <a class="button primary" href="projects/ddts.html">Read the case study</a>
+              <a class="button secondary" href="https://github.com/MarianaArn/github-portfolio" target="_blank" rel="noopener noreferrer">Portfolio source</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <img src="assets/ddts-architecture.svg" alt="Diagram of the DDTS architecture showing users, Nginx, the Flask application, presentation and persistence layers, and operational controls.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container narrow">
+        <p class="eyebrow">Education</p>
+        <h2>Graduate study in information technology</h2>
+        <article class="timeline-item">
+          <h3>Master of Science in Information Technology</h3>
+          <p class="muted">University of the People</p>
+          <p>Graduate coursework and the capstone integrate software engineering, cybersecurity, databases, human-computer interaction, project management, research, testing, deployment, and professional communication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Connect with me</h2>
+        <p>I welcome professional conversations about information technology, software engineering, datacenter operations, and applied systems projects.</p>
+        <a class="button primary" href="https://github.com/MarianaArn" target="_blank" rel="noopener noreferrer">Visit my GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year">2026</span> Mariana Arnold.</p>
+      <p>Built as a professional digital portfolio with GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
